@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('partners', function (Blueprint $table) {
+        Schema::create('banners', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('image');
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('partners');
+        Schema::dropIfExists('banners');
     }
 };
