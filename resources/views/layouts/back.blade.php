@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('vendors/toastify/toastify.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     @yield('styles')
-    @livewireStyles
+    <livewire:styles />
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -43,7 +43,7 @@
     <script src="{{ asset('vendors/toastify/toastify.js') }}"></script>
     @include('partials.notifications')
     @yield('scripts')
-    @livewireScripts
+    <livewire:scripts />
     @stack('scripts')
 </body>
 
