@@ -1,4 +1,5 @@
 @extends('layouts.back')
+@section('title', 'Mon profil')
 @section('breadcrumb')
     <section class="content-header">
         <div class="container-fluid">
