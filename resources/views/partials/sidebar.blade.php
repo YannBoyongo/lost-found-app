@@ -20,7 +20,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ $current == 'pillars' ? 'active' : null }}">
+                    <a href="{{ route('banners.index') }}"
+                        class="nav-link {{ $current == 'sliders' ? 'active' : null }}">
                         <i class="nav-icon fas fa-columns"></i>
                         <p>
                             {{ __('Bannières') }}

@@ -1,6 +1,3 @@
-@php
-    $authNav = Auth::user();
-@endphp
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -31,9 +28,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <div class="dropdown-divider"></div>
-                    <a href="{{ route('welcome') }}" class="dropdown-item">
-                        <i class="fas fa-home"></i></i> {{ __('Accueil') }}
-                    </a>
+                    <div class="dropdown-item">{{ Auth::user()->name }}</div>
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('profile.edit') }}" class="dropdown-item">
                         <i class="far fa-user mr-2"></i> {{ __('Profile') }}
